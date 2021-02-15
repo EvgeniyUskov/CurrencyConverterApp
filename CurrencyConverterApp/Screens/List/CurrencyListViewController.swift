@@ -89,7 +89,6 @@ extension CurrencyListViewController {
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.selectRow(forIndexPath: indexPath)
         self.navigationController?.popViewController(animated: true)
-        //        dismiss(animated: true, completion: nil)
     }
     
     public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

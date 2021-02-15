@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: Constants.Stuff.modelName, managedObjectModel: self.managedObjectModel)
                 let description = NSPersistentStoreDescription()
                 description.type = NSInMemoryStoreType
-                description.shouldAddStoreAsynchronously = false //?
+                description.shouldAddStoreAsynchronously = false
                 
                 container.persistentStoreDescriptions = [description]
                 container.loadPersistentStores { (description, error) in

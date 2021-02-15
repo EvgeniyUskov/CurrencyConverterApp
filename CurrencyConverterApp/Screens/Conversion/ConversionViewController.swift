@@ -47,13 +47,6 @@ public class ConversionViewController: UIViewController {
     public init(viewModel: ConversionViewModel) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel = viewModel
-        
-//        interactor?.updateRates(for: viewModel.rateViewModel) {
-//            [weak self] in
-//            DispatchQueue.main.async {
-//                self?.conversionView.configure(with: viewModel)
-//            }
-//        }
     }
     
     required init?(coder: NSCoder) {

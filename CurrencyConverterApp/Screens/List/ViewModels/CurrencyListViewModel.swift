@@ -22,7 +22,6 @@ public class CurrencyListViewModel {
     func selectRow(forIndexPath indexPath: IndexPath) {
         guard let currencyViewModels = currencyViewModels else {return}
         selectedCurrencySubject.onNext(currencyViewModels[indexPath.row].currency)
-//        selectedCurrencySubject.onCompleted()
     }
     
 }

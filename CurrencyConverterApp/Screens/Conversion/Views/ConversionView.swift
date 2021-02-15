@@ -56,18 +56,9 @@ public class ConversionView: UIView {
         return stackView
     }()
     
-    // Error
-    lazy var errorLabel: UILabel = {
-        let label = UILabel.makeErrorLabel()
-        label.textColor = .red
-        label.isHidden = true
-        return label
-    }()
-    
     //Global stackview
     lazy var globalStackView: UIStackView = {
         let stackView = UIStackView.makeVerticalStackView(views: [fromStackView,
-                                                                  errorLabel,
                                                                   toStackView])
         stackView.spacing = 5
         stackView.distribution = .fillEqually
@@ -76,7 +67,6 @@ public class ConversionView: UIView {
     
     //MARK: Init
     init(viewController: ConversionViewDelegate) {
-        //        super.init()
         super.init(frame: UIScreen.main.bounds)
         self.viewControllerDelegate = viewController
         setupView()
